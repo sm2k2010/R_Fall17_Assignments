@@ -1,7 +1,7 @@
 library(microbenchmark)
 library(ggplot2)
 
-#using mapply
+#using mapply to find sum of respective elements of sub_1, sub_2 and sub_3
 demo_list <- list(sub_1 = c(1:10), sub_2 = c(11:20), sub_3 = c(21:30))
 mapply_function <- function()
 {
