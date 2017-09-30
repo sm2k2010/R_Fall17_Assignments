@@ -36,7 +36,7 @@ df_demo <- data.frame(student_id = 1:10000, marks = rnorm(10000, mean = 60, sd =
     }
   }
 
-#Using tapply
+#Using tapply to find mean of marks based on year
 tapply_function <- function()
 {
   tapply(df_demo$marks, df_demo$year, mean)
