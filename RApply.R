@@ -34,7 +34,7 @@ loop_function <- function()
 #Benchmarking both the functions
 microbenchmark(rapply_function(),loop_function())
 
-# Performance graph for mapply
+# Performance graph for rapply
 performance_rapply <- data.frame(Replications = character(), Elapsed_Time = numeric())
 rep <- c(100,500,1000,1500,2000)
 for(i in rep){
